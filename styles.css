@@ -1,0 +1,34 @@
+.course {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    background-color: #c5050c;
+}
+
+.menu li {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: auto;
+    width: 70%;
+    font-size: x-large;
+}
