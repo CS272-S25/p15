@@ -189,3 +189,14 @@ a:hover {
     border-right: 10px solid transparent;
     border-top: 10px solid #990000;
 }
+
+  
+  .dark-mode {
+    background-color: #12121229;
+    color: #e0e0e0;
+  }
+  
+  .dark-mode a {
+    color: #90caf9;
+  }
+  
