@@ -54,10 +54,37 @@
 
     <!-- Main content -->
     <main>
-      <h1>Discussion</h1>
+      <h1>Discussion Forum</h1>
+
+      <!-- New Discussion Form -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3>Start a New Discussion</h3>
+          <form id="newDiscussionForm">
+            <div class="mb-3">
+              <label for="title" class="form-label">Title</label>
+              <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="mb-3">
+              <label for="content" class="form-label">Content</label>
+              <textarea class="form-control" id="content" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post Discussion</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Discussions List -->
+      <div id="discussionsList">
+        <!-- Discussions will be added here by JavaScript -->
+      </div>
     </main>
 
-    <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <!-- Footer content can be added here -->
+    </footer>
+
+    <!-- Load the discussion JavaScript -->
+    <script src="discussion.js"></script>
   </body>
 </html> 
