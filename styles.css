@@ -190,5 +190,76 @@ a:hover {
     border-top: 10px solid #990000;
 }
 
+/* Announcements Page Styles */
+.announcements-list .card {
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+    border-left: 4px solid #c5050c;
+}
+
+.announcements-list .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-list .card-title {
+    color: #c5050c;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.metadata {
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 0.4em 0.8em;
+}
+
+.progress {
+    background-color: #f0f0f0;
+}
+
+.progress-bar {
+    background-color: #c5050c;
+}
+
+#searchAnnouncements {
+    border-color: #c5050c;
+}
+
+#searchAnnouncements:focus {
+    box-shadow: 0 0 0 0.2rem rgba(197, 5, 12, 0.25);
+    border-color: #c5050c;
+}
+
+.btn-outline-secondary {
+    border-color: #c5050c;
+    color: #c5050c;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #c5050c;
+    border-color: #c5050c;
+    color: white;
+}
+
+.pagination .page-link {
+    color: #c5050c;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #c5050c;
+    border-color: #c5050c;
+    color: white;
+}
+
+.pagination .page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(197, 5, 12, 0.25);
+}
+
   
   
