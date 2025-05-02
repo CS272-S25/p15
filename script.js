@@ -1,23 +1,18 @@
-// Fun facts for the homepage
-const facts = [
-    "HTML stands for HyperText Markup Language.",
-    "CSS can be used to create animations!",
-    "JavaScript was created in just 10 days.",
-    "Bootstrap was originally developed at Twitter.",
-    "Semantic HTML improves accessibility.",
-    "The first website ever is still online: info.cern.ch",
-    "JavaScript and Java are completely different languages!"
-];
-  
-// Function to rotate facts in the fun-fact box
-function rotateFact() {
+// Function to fetch and display random jokes
+async function rotateFact() {
     const factBox = document.getElementById("fun-fact");
     if (!factBox) return;
-    const randomFact = facts[Math.floor(Math.random() * facts.length)];
-    factBox.innerText = "💡 " + randomFact;
+    
+    try {
+        const response = await fetch('https://official-joke-api.appspot.com/random_joke');
+        const joke = await response.json();
+        factBox.innerHTML = `💡 ${joke.setup}<br>${joke.punchline}`;
+    } catch (error) {
+        factBox.innerHTML = "💡 Error loading joke. Please try again later.";
+        console.error('Error fetching joke:', error);
+    }
 }
-  
-// Call once immediately, then every 6 seconds
-rotateFact();
-setInterval(rotateFact, 6000);
+
+// Ensure DOM is loaded before running
+window.addEventListener('DOMContentLoaded', rotateFact);
   
