@@ -261,5 +261,12 @@ a:hover {
     box-shadow: 0 0 0 0.2rem rgba(197, 5, 12, 0.25);
 }
 
+table {
+    text-align: justify;
+  }
   
+  td, th {
+    vertical-align: top;
+    text-align: justify;
+  }
   
